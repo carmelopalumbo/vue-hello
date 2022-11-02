@@ -9,7 +9,9 @@ createApp({
     data(){
         return{
             message: 'Benvenuto Vue!',
-            color: 'red'
+            myClass: 'title_class',
+            image: '/assets/img/vuejs-wide.png',
+            logo: 'logo_style'
         }
     },
 
