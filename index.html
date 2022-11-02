@@ -15,7 +15,10 @@
 
     <div id="app">
         <h1 :class="myClass"> {{message}} </h1>
-        <img :src="image" alt="logo" :class="logo">
+        <img :src="image" alt="" :class="logo">
+        <p v-show="!image">Vue.js è un framework JavaScript open-source in configurazione Model view viewmodel per la creazione di interfacce utente e single-page applications. È stato creato da Evan You ed è gestito da lui stesso e i membri attivi del core team, provenienti da varie società come Netlify e Netguru.</p>
+        <button @click="showInfo()" :disabled="!image">MOSTRA INFO</button>
+        <button @click="showLogo()" :disabled="image === '/assets/img/vuejs-wide.png'">MOSTRA LOGO</button>
     </div>
 
     <!-- SCRIPT JS -->

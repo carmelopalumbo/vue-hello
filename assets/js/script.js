@@ -17,6 +17,12 @@ createApp({
 
     //metodi dell'app
     methods: {
+        showInfo(){
+            this.image = '';
+        },
 
+        showLogo(){
+            this.image = '/assets/img/vuejs-wide.png';
+        }
     }
 }).mount('#app')
