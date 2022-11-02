@@ -8,7 +8,7 @@ createApp({
     //contenuto dell'app
     data(){
         return{
-
+            message: 'Benvenuto Vue!'
         }
     },
 
